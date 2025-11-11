@@ -96,3 +96,14 @@ pacman-key --init
 pacman-key --populate msys2
 pacman -Syu
 ```
+
+5) Clang
+
+If you want to have LSP support you need to change .clangd
+CompileFlags:
+  Add:
+    - -IC:/your/path/academy/lib
+    - -std=c11
+    - -xc
+
+change /your/path with actual path where is academy repo
